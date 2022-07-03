@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>La programmation événementielle</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="h1" class="">La programmation événementielle</h1>
+  </header>
+  
+  <main>    
+
+    <div class="select">
+      <label>vous êtes quelle utilisateur ?</label>
+      <select name="user" id="userNumber"  >       
+        <option value="1" id="user1" onclick="myFunction()">utilisateur 1</option>
+        <option value="2" id="user2" onclick="myFunction()">utilisateur 2</option>
+      </select>      
+    </div>
+
+
+    <div class="section">
+      <section id="section1" class="section1">
+        <form>
+        <h2>utilisateur 1</h2>
+          <fieldset>
+            <legend>pseudo</legend> 
+            <input id="pseudo1" type="text" placeholder="pseudo" required>
+          </fieldset>
+          <fieldset>
+            <legend>message</legend>    
+            <textarea id="message1" class="messageInput" rows="5" placeholder="ici votre message"></textarea>
+          </fieldset>
+          <button id="soumettre1" onclick="displayMessage1(); displayPseudo1();" type="button">soumettre</button>
+        </form>
+      </section>
+
+
+      <section id="section2""" class="section2 noSelect">
+        <form>
+        <h2>utilisateur 2</h2>
+          <fieldset>
+            <legend>pseudo</legend> 
+            <input class=".section2_1{
+              " type="text" id="pseudo2" placeholder="pseudo">
+          </fieldset>
+          <fieldset>
+            <legend>message</legend>    
+            <textarea id="message2" class="messageInput" rows="5" cols="25" placeholder="ici votre message"></textarea>
+          </fieldset>
+          <button class="" id="soumettre2"  type="button" onclick="displayMessage2(); displayPseudo2();">soumettre</button>
+        </form>
+      </section>
+    </div>    
+    
+    <div class="message">
+      <div class="span">
+        <span class="span2" id="p"></span>
+      </div>
+    </div>
+    
+    <div class="message">
+      <div class="span">
+        <span class="span1" id="displayPseudo">pseudo</span>       
+        <span  class="span2" id="displayMessage"></span>
+      </div>      
+    </div>
+
+    <div class="message">
+      <div class="span">
+        <span class="span1" id="displayPseudo2">pseudo</span>       
+        <span  class="span2" id="displayMessage2"></span>
+      </div>      
+    </div>
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
